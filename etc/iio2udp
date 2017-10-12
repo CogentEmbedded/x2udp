@@ -1,0 +1,51 @@
+# This is the default configuration file for iio2udp daemon
+
+# UDP port for broadcasting
+port = 4857;
+interface = "@DEFAULT_INTERFACE@";
+
+# Define channels
+channels = (
+    {
+        device = "0-0049";
+        channel = "voltage0";
+        scale = 1.0;
+        offset = 0.0;
+        sample_time = 50; # ms
+        long_format = false;
+        device_index = 0;
+        channel_index = 0;
+    },
+    {
+        device = "0-0049";
+        channel = "voltage1";
+        scale = 1.0;
+        offset = 0.0;
+        sample_time = 50; # ms
+        long_format = false;
+        device_index = 0;
+        channel_index = 1;
+    },
+    {
+        device = "0-0049";
+        channel = "voltage2";
+        scale = 1.0;
+        offset = 0.0;
+        sample_time = 50; # ms
+        long_format = false;
+        device_index = 0;
+        channel_index = 2;
+    },
+    {
+        device = "0-0049";
+        channel = "voltage3";
+        scale = 1.0;
+        offset = 0.0;
+        sample_time = 50; # ms
+        long_format = false;
+        device_index = 0;
+        channel_index = 3;
+    }
+)
+
+

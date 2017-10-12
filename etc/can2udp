@@ -1,0 +1,35 @@
+# This is the default configuration file for can2udp daemon
+
+# UDP port for broadcasting
+port = 4858;
+interface = "@DEFAULT_INTERFACE@";
+
+# Define interfaces
+interfaces = (
+    {
+        name = "can0";
+        interface_index = 0;
+        filter = [0x42A];
+        can_fd = true;
+    },
+    {
+        name = "can1";
+        interface_index = 1;
+        filter = [0x42A];
+        can_fd = true;
+    },
+    {
+        name = "can2";
+        interface_index = 2;
+        filter = [0x42A];
+        can_fd = true;
+    },
+    {
+        name = "can3";
+        interface_index = 3;
+        filter = [0x42A];
+        can_fd = true;
+    }
+)
+
+
